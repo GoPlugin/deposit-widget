@@ -19,9 +19,8 @@ const getTokenContract = async (web3) => {
   console.log("Netid tokencontract",netId)
   const tokennetwork = new web3.eth.Contract(
     data,
-    // "0xff7412ea7c8445c46a8254dfb557ac1e48094391" //-Mainnet
-    "0xb3db178db835b4dfcb4149b2161644058393267d" // Apothem
-
+    "0xff7412ea7c8445c46a8254dfb557ac1e48094391" //-Mainnet
+    //"0x33f4212b027e22af7e6ba21fc572843c0d701cd1" // -Apothem
   );  
   console.log("tokennetwork",tokennetwork)
   return tokennetwork;
