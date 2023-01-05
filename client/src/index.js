@@ -76,7 +76,7 @@ const depositPLIIntoInternalContract = ( accounts) => {
     e.preventDefault();
     const internalInstance = await getInternalContract(web3,_caddr)
     console.log("internalInstance are ",internalInstance)
-    const tokens = await convertTokens(_tokens);
+    const tokens = await convertTokens(tokens);
     console.log("tokkens are ", tokens)
     await internalInstance.methods.depositPLI(tokens)
       .send({ from: accounts[0], gas: 21000000 })
