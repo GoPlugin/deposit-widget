@@ -31,6 +31,12 @@ Step 5:
 Now you will be able to trigger getPriceInfo function from customer contract.  
 Same functionality can be triggered by calling requestData function from Internal Contract.  
 
+Step 6:
+To set oracle fee on a Internal contract
+  -choose the owner account of Internal Contract in XDC pay wallet.  
+  -enter the Internal Contract address and oracle fee in  "Set Oracle Fee" section.  
+  -click set button.
+
 Tips:  
 To change the PLI address please modifiy the file "deposit-widget/client/src/utils.js" in line 22  
 By default it is PLI mainnet PLI address  
