@@ -87,6 +87,33 @@ const depositPLIIntoInternalContract = ( accounts) => {
   });
 }
 
+const setOracleFee = ( accounts) => {
+  let _amount;
+  $("#OracleFee").on("change", (e) => {
+    _amount = e.target.value;
+    console.log("OracleFee", _amount)
+  });
+  let _caddr;
+  $("#caddrFee").on("change", (e) => {
+    _caddr = e.target.value;
+    console.log("caddrFee", _caddr)
+  });
+  $("#setOracleFee").on("click", async (e) => {
+    console.log("set oracle fee to internal contract", accounts[0])
+    e.preventDefault();
+    const internalInstance = await getInternalContract(web3,_caddr)
+    console.log("internalInstance are ",internalInstance)
+    const tokens = await convertTokens(_amount);
+    console.log("tokkens are ", tokens.toString());
+    await internalInstance.methods.setOracleFee(tokens)
+      .send({ from: accounts[0], gas: 21000000 })
+      .on("transactionHash", async function (transactionHash) {
+        const [txhash, status] = await getTxnStatus(transactionHash);
+        console.log("txhashshshs", txhash, status)
+      });
+  });
+}
+
 async function nodeOperatorApp() {
   const web3 = await loadWeb3();
   console.log("Web3", web3);
@@ -96,6 +123,7 @@ async function nodeOperatorApp() {
   console.log("tokencontract", tokencontract);
   approveInternalContractToTransfer(tokencontract,accounts);
   depositPLIIntoInternalContract(accounts);
+  setOracleFee(accounts);
 }
 
 nodeOperatorApp();
