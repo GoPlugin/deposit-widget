@@ -1,532 +1,568 @@
 [
-  {
-    "constant": false,
-    "inputs": [],
-    "name": "testMyFunc",
-    "outputs": [
-      {
-        "name": "requestId",
-        "type": "bytes32"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [],
-    "name": "withdrawPli",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_requestId",
-        "type": "bytes32"
-      },
-      {
-        "name": "_currentval",
-        "type": "uint256"
-      }
-    ],
-    "name": "fulfill",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "currentValue",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [],
-    "name": "renounceOwnership",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "oracle",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "latestTimestamp",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "owner",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "showPrice",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_caller",
-        "type": "address"
-      }
-    ],
-    "name": "requestData",
-    "outputs": [
-      {
-        "name": "requestId",
-        "type": "bytes32"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "ORACLE_PAYMENT",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "plidbs",
-    "outputs": [
-      {
-        "name": "depositor",
-        "type": "address"
-      },
-      {
-        "name": "totalcredits",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "getPluginToken",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_fee",
-        "type": "uint256"
-      }
-    ],
-    "name": "setOracleFee",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "jobId",
-    "outputs": [
-      {
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_value",
-        "type": "uint256"
-      }
-    ],
-    "name": "depositPLI",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_requestId",
-        "type": "bytes32"
-      },
-      {
-        "name": "_payment",
-        "type": "uint256"
-      },
-      {
-        "name": "_callbackFunctionId",
-        "type": "bytes4"
-      },
-      {
-        "name": "_expiration",
-        "type": "uint256"
-      }
-    ],
-    "name": "cancelRequest",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_newOwner",
-        "type": "address"
-      }
-    ],
-    "name": "transferOwnership",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "name": "_pli",
-        "type": "address"
-      },
-      {
-        "name": "_oracle",
-        "type": "address"
-      },
-      {
-        "name": "_jobid",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "constructor"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "requestId",
-        "type": "bytes32"
-      },
-      {
-        "indexed": true,
-        "name": "currentVal",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "RequestFulfilled",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "requester",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "jobId",
-        "type": "bytes32"
-      },
-      {
-        "indexed": true,
-        "name": "requestId",
-        "type": "bytes32"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "requestCreated",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "jobId",
-        "type": "bytes32"
-      },
-      {
-        "indexed": true,
-        "name": "requestId",
-        "type": "bytes32"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "requestCreatedTest",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "oraclefee",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "oracleFeeModified",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "amount",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "pliDeposited",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "amount",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "withdrawnPli",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "requestID",
-        "type": "bytes32"
-      },
-      {
-        "indexed": true,
-        "name": "payment",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "expiration",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "canceledPluginRequest",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "previousOwner",
-        "type": "address"
-      }
-    ],
-    "name": "OwnershipRenounced",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "previousOwner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "newOwner",
-        "type": "address"
-      }
-    ],
-    "name": "OwnershipTransferred",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "id",
-        "type": "bytes32"
-      }
-    ],
-    "name": "PluginRequested",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "id",
-        "type": "bytes32"
-      }
-    ],
-    "name": "PluginFulfilled",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "id",
-        "type": "bytes32"
-      }
-    ],
-    "name": "PluginCancelled",
-    "type": "event"
-  }
-]
+		{
+			"constant": false,
+			"inputs": [],
+			"name": "testMyFunc",
+			"outputs": [
+				{
+					"name": "requestId",
+					"type": "bytes32"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [],
+			"name": "withdrawPli",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"name": "_requestId",
+					"type": "bytes32"
+				},
+				{
+					"name": "_currentval",
+					"type": "uint256"
+				}
+			],
+			"name": "fulfill",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "currentValue",
+			"outputs": [
+				{
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [],
+			"name": "renounceOwnership",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "oracle",
+			"outputs": [
+				{
+					"name": "",
+					"type": "address"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "latestTimestamp",
+			"outputs": [
+				{
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "owner",
+			"outputs": [
+				{
+					"name": "",
+					"type": "address"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "showPrice",
+			"outputs": [
+				{
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"name": "_caller",
+					"type": "address"
+				}
+			],
+			"name": "requestData",
+			"outputs": [
+				{
+					"name": "requestId",
+					"type": "bytes32"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "ORACLE_PAYMENT",
+			"outputs": [
+				{
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [
+				{
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "plidbs",
+			"outputs": [
+				{
+					"name": "depositor",
+					"type": "address"
+				},
+				{
+					"name": "totalcredits",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "getPluginToken",
+			"outputs": [
+				{
+					"name": "",
+					"type": "address"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"name": "_fee",
+					"type": "uint256"
+				}
+			],
+			"name": "setOracleFee",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "jobId",
+			"outputs": [
+				{
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"name": "_value",
+					"type": "uint256"
+				}
+			],
+			"name": "depositPLI",
+			"outputs": [
+				{
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "tsyms",
+			"outputs": [
+				{
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"name": "_requestId",
+					"type": "bytes32"
+				},
+				{
+					"name": "_payment",
+					"type": "uint256"
+				},
+				{
+					"name": "_callbackFunctionId",
+					"type": "bytes4"
+				},
+				{
+					"name": "_expiration",
+					"type": "uint256"
+				}
+			],
+			"name": "cancelRequest",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"name": "_newOwner",
+					"type": "address"
+				}
+			],
+			"name": "transferOwnership",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "fsyms",
+			"outputs": [
+				{
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"name": "_pli",
+					"type": "address"
+				},
+				{
+					"name": "_oracle",
+					"type": "address"
+				},
+				{
+					"name": "_jobid",
+					"type": "string"
+				},
+				{
+					"name": "_fsyms",
+					"type": "string"
+				},
+				{
+					"name": "_tsyms",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "requestId",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"name": "currentVal",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "RequestFulfilled",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "requester",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"name": "jobId",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"name": "requestId",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "requestCreated",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "jobId",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"name": "requestId",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "requestCreatedTest",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"name": "oraclefee",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "oracleFeeModified",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"name": "amount",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "pliDeposited",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"name": "amount",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "withdrawnPli",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "owner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"name": "requestID",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"name": "payment",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "expiration",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "canceledPluginRequest",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "previousOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnershipRenounced",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "previousOwner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"name": "newOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnershipTransferred",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "id",
+					"type": "bytes32"
+				}
+			],
+			"name": "PluginRequested",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "id",
+					"type": "bytes32"
+				}
+			],
+			"name": "PluginFulfilled",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"name": "id",
+					"type": "bytes32"
+				}
+			],
+			"name": "PluginCancelled",
+			"type": "event"
+		}
+	]
